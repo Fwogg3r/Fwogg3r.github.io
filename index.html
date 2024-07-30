@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Portfolio</title>
+    <title>Thomas Bryant's Portfolio</title>
     <style>
       #hover_el {
         height: 100px;
@@ -31,7 +31,7 @@
         font-size: 100px;
       }
       
-      
+
 
       .profile-image {
         display: block;
@@ -75,7 +75,8 @@
     <script type='text/javascript'>
       var notReset = true
       var index = 0;
-      var txt = "Fwogg3r";
+      var defaultTxt = "Thomas Bryant";
+      var changeTxt = "Fwogg3r"
       window.onload = function() {
         check_for_hover()
       };
@@ -103,16 +104,16 @@
         var hover_element = document.getElementById('hover_el');
         var hover_status = (getStyle(hover_element, 'border-style') === 'dashed') ? true : false;
         if (hover_status) {
-          if (hover_element.innerHTML.localeCompare('Thomas Bryant') != 0 && index == txt.length) {
+          if (hover_element.innerHTML.localeCompare(changeTxt) != 0 && index == txt.length) {
             deleteWord(hover_element);
-          } else if (hover_element.innerHTML.localeCompare('Thomas Bryant') != 0) {
-            writeWord(hover_element, 'Thomas Bryant');
+          } else if (hover_element.innerHTML.localeCompare(changeTxt) != 0) {
+            writeWord(hover_element, changeTxt);
           }
         } else {
-          if (hover_element.innerHTML.localeCompare('Fwogg3r') != 0 && index == txt.length) {
+          if (hover_element.innerHTML.localeCompare(defaultTxt) != 0 && index == txt.length) {
             deleteWord(hover_element);
-          } else if (hover_element.innerHTML.localeCompare('Fwogg3r') != 0) {
-            writeWord(hover_element, 'Fwogg3r');
+          } else if (hover_element.innerHTML.localeCompare(defaultTxt) != 0) {
+            writeWord(hover_element, defaultTxt);
           }
         };
         setTimeout(check_for_hover, 100);
@@ -139,9 +140,11 @@
       </header>
       <section class="section">
         <h2>About Me</h2>
-        <p> Hello, I'm <span style="color: #00CC66"> Thomas Bryant</span> AKA <span style="color: #00CC66"> Fwogg3r</span>!<br> I've been making games since I was 12 years old on the <span style="color: #fa5252">Roblox</span> Studio Engine. <br> I'm currently 19 years old and studying <span style="color: #86eba1">Computer Science</span> at <span style="color: #74aee8">Southern New Hampshire University.</span>
+        <p> Hello, I'm <span style="color: #00CC66"> Thomas Bryant</span> AKA <span style="color: #00CC66"> Fwogg3r</span>!<br> I've been programming since the age of 12 on the <span style="color: #fa5252">Roblox</span> Studio Engine. <br> I'm currently 20 years old and studying <span style="color: #86eba1">Computer Science</span> at <span style="color: #74aee8">Southern New Hampshire University.</span>
         <br>
-        I am passionate more than anything about game and software design and have versed myself specifically in those over my life. However, I am always eager to learn and understand new things whenever the opportunity presents itself.
+        I am a passionate learner invested in the pursuit of knowledge above all, and strive in my day to day to learn and develop new skills.
+        <br>
+        I have always been fascinated with technology of all kinds and have dedicated my life to learning new skills to interface and develop it on all levels.
         </p>
       </section>
       <section class="section">
@@ -150,7 +153,7 @@
         <h3 style = "color: #74aee8"> Programming</h3>
         <h4 style="color: #fa5252">Roblox:</h4> 
         <p>
-        Full-Stack Developer (2016-Present) 
+        Full-Stack Developer (2016-Present)
         <br>
         <a href = "https://www.roblox.com/users/43875752/profile" style = "color: #00CC66">My Profile</a>
         <br>
